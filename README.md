@@ -240,29 +240,29 @@ func DoSelpg(args *selpgArgs) {
 
 1.`selpg `
 
-![1570197583158](D:\MaYun\Go-CLI-\img\1570197583158.png)
+![1570197583158](https://github.com/farthjun/Go-CLI-/blob/master/img/1570197583158.png?raw=true)
 
 2.`selpg -s1 -e1 test.txt`
 
-![1570197764940](D:\MaYun\Go-CLI-\img\1570197764940.png)
+![1570197764940](https://github.com/farthjun/Go-CLI-/blob/master/img/1570197764940.png?raw=true)
 
 ...
 
-![1570197874136](C:\Users\JUN\AppData\Roaming\Typora\typora-user-images\1570197874136.png)
+![1570197874136](https://github.com/farthjun/Go-CLI-/blob/master/img/1570197825605.png?raw=true)
 
 可以看到刚好输出72行(一页)。
 
 3.`selpg -s1 -e2 test.txt >outfile.txt`
 
-![1570198189472](D:\MaYun\Go-CLI-\img\1570198189472.png)
+![1570198189472](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198189472.png?raw=true)
 
-![1570198218520](D:\MaYun\Go-CLI-\img\1570198218520.png)
+![1570198218520](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198218520.png?raw=true)
 
 正好144行(2页)。
 
 4.`selpg -s1 -e4 test.txt 2>error_file.txt`
 
-![1570198341479](D:\MaYun\Go-CLI-\img\1570198341479.png)
+![1570198341479](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198341479.png?raw=true)
 
 5.新建测试文件test_f.txt（涵盖在本项目中），在50行、100行之前插入'\f'。测试以下指令：
 
@@ -270,16 +270,16 @@ func DoSelpg(args *selpgArgs) {
 
 每页行数并不固定，显示在命令行中。
 
-![1570198524592](D:\MaYun\Go-CLI-\img\1570198524592.png)
+![1570198524592](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198524592.png?raw=true)
 
-![1570198570142](D:\MaYun\Go-CLI-\img\1570198570142.png)
+![1570198570142](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198570142.png?raw=true)
 
 可以看到正好输出两页(100行之前)。
 
 6.`selpg -s1 -e1 -dDestination test.txt`
 
-![1570198748590](D:\MaYun\Go-CLI-\img\1570198748590.png)
+![1570198748590](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198748590.png?raw=true)
 
-![1570198768184](D:\MaYun\Go-CLI-\img\1570198768184.png)
+![1570198768184](https://github.com/farthjun/Go-CLI-/blob/master/img/1570198768184.png?raw=true)
 
 正好72行(1页)。
